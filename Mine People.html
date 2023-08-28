@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+     content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="junim.img/pikachu.png">
+
+    <title>Bootstrap</title>
+</head>
+<body>
+<!--Menu-->
+<nav class="navbar col-12 position-fixed bg-dark navbar-expand-lg" data-bs-theme="dark" style="z-index: 999;">
+    <div class="container-fluid col-11">
+      <a class="navbar-brand" href="#">Mine People</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#produtos">Itens</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#conteudo">sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Direitos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--Carrosel-->
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="junim.img/imagem1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="junim.img/imagem2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="junim.img/imagem3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<!--Card-->
+<h2 id="produtos" class="text-center">Produtos</h2>
+<div class="row row-cols-1 row-cols-md-2 g-4 col-11 m-auto">
+  <div class="col">
+    <div class="card">
+      <img src="junim.img/dog.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Bloco de Pedra</h5>
+        <p class="card-text"></p>
+
+        <!--Início código modal-->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+  Ver mais...
+</button>
+
+<!-- Modal-->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Bloco de Pedra</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="junim.img/dog.jpeg" class="card-img-top" alt="...">
+        <p class="card-text">Um bloco de pedra simples, mas útil no início de sua aventura, usado para fazer ferramentas e blocos diversos.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="junim.img/gold.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ouro</h5>
+        <p class="card-text"></p>
+        <!--Início código modal-->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+          Ver mais...
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Ouro</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="junim.img/gold.png" class="card-img-top" alt="...">
+                <p class="card-text">Muito odiado quanto a frágilidade de sua armadura e ferramentas, mas utimamente ganhou uma nova utilidade, podendo ser usado como troca com os Piglins(criaturas NORMALMENTE hostis, não te atacam se você estiver com um ingot de ouro).</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="junim.img/iron.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ferro</h5>
+        <p class="card-text"></p>
+                <!--Início código modal-->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+  Ver mais...
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Ferro</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="junim.img/iron.jpeg" class="card-img-top" alt="...">
+        <p class="card-text">Básico e facil de se obter, todos ótimo para iniciantes.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="junim.img/diamond.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Diamante</h5>
+        <p class="card-text"></p>
+                <!--Início código modal-->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+  Ver mais...
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Diamante</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="junim.img/diamond.jpg" class="card-img-top" alt="...">
+        <p class="card-text">Dificil de obter, porém forte, resistente e muito útil</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Conteúdo-->
+<br><br>
+<hr class="col-11 m-auto"/>
+<div id="conteudo" class="col-11 m-auto">
+<h2 class="text-center">Sobre</h2>
+<p class="text-center">Esta página é destinada a jogadores inexperientes ou curiosos do famoso jogo Minecraft.</p>
+</div>
+<hr class="col-11 m-auto"/>
+<br><br>
+<!--Rodapé-->
+<footer id="footer" class="page-footer p-5 col-11 m-auto"
+        style="background-color: #333;">
+  <div class="text-center">
+    <a href="#">@2023 Copyright: Davi Oliveira Lopes</a>
+  </div>
+</footer>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
